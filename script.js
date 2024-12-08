@@ -36,6 +36,9 @@ function Op(op) {
     if (deletedChar === "(") openBrackets--;
     if (deletedChar === ")") openBrackets++;
     disp.innerText = disp.innerText.slice(0, -1) || "0";
+    if (disp.innerText === "Error") {
+      disp.innerText = "0"
+    }
   } else if (op === "×") {
     disp.innerText += "*"
     disp.innerText = eval(disp.innerText);
