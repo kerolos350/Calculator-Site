@@ -82,6 +82,10 @@ body {
     background-color: rgb(70, 101, 129);
 }
 
+.del {
+    background-color: rgb(24, 24, 24);
+}
+
 .eq {
     background-color: rgb(11, 89, 184);
 }
