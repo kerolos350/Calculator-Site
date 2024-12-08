@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="calculator">
+        <p id="sum">0</p>
+        <div class="input">
+            <button onclick="Op('AC')" type="button" class="button op btnS">AC</button>
+            <button onclick="Op('sb')" type="button" class="button op btnS">( )</button>
+            <button onclick="Op('%')" type="button" class="button op btnS">%</button>
+            <button onclick="Op('÷')" type="button" class="button op btnS">÷</button>
+            <button onclick="ChV(7)" type="button" class="button numbers">7</button>
+            <button onclick="ChV(8)" type="button" class="button numbers">8</button>
+            <button onclick="ChV(9)" type="button" class="button numbers">9</button>
+            <button onclick="Op('×')" type="button" class="button op btnS">×</button>
+            <button onclick="ChV(4)" type="button" class="button numbers">4</button>
+            <button onclick="ChV(5)" type="button" class="button numbers">5</button>
+            <button onclick="ChV(6)" type="button" class="button numbers">6</button>
+            <button onclick="Op('-')" type="button" class="button op btnS">-</button>
+            <button onclick="ChV(1)" type="button" class="button numbers">1</button>
+            <button onclick="ChV(2)" type="button" class="button numbers">2</button>
+            <button onclick="ChV(3)" type="button" class="button numbers">3</button>
+            <button onclick="Op('+')" type="button" class="button op btnS">+</button>
+            <button onclick="ChV(0)" type="button" class="button numbers zero">0</button>
+            <button onclick="ChV('.')" type="button" class="button numbers">.</button>
+            <button onclick="Op('del')" type="button" class="button op btnS">del</button>
+            <button onclick="Op('=')" type="button" class="button op eq">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
