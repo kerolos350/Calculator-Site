@@ -32,12 +32,13 @@ function Op(op) {
   } else if (op === "AC") {
     disp.innerText = "0";
   } else if (op === "del") {
-    const deletedChar = disp.innerText.slice(-1);
-    if (deletedChar === "(") openBrackets--;
-    if (deletedChar === ")") openBrackets++;
-    disp.innerText = disp.innerText.slice(0, -1) || "0";
-    if (disp.innerText === "Error") {
+    if (disp.innerText === "Error" || disp.innerText === NaN || disp.innerText === "NaN") {
       disp.innerText = "0"
+    } else {
+      const deletedChar = disp.innerText.slice(-1);
+      if (deletedChar === "(") openBrackets--;
+      if (deletedChar === ")") openBrackets++;
+      disp.innerText = disp.innerText.slice(0, -1) || "0";
     }
   } else if (op === "×") {
     disp.innerText += "*"
