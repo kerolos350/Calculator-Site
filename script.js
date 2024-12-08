@@ -4,6 +4,10 @@ var openBrackets = 0;
 function ChV(num) {
   const lastChar = disp.innerText.slice(-1);
 
+  if (disp.innerText === "Error") {
+    disp.innerText = "0"
+  }
+
   if (lastChar === ")") {
     disp.innerText += "*";
   }
@@ -17,6 +21,10 @@ function ChV(num) {
 
 function Op(op) {
   const lastChar = disp.innerText.slice(-1);
+
+  if (disp.innerText === "Error") {
+    disp.innerText = "0"
+  }
 
   if (op === "sb") {
     if (openBrackets > 0 && (!isNaN(lastChar) || lastChar === ")")) {
